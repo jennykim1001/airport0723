@@ -1,0 +1,92 @@
+:root {
+  --text: #3f3d45;
+  --text-h: #08060d;
+  --bg: #f7f7fb;
+  --surface: #ffffff;
+  --border: #e5e4e7;
+  --accent: #4f8dfd;
+
+  --level-low-bg: #e3f7e9;
+  --level-low-text: #1f8a4c;
+  --level-mid-bg: #fff3d6;
+  --level-mid-text: #a86a00;
+  --level-high-bg: #fde3e0;
+  --level-high-text: #c23b2c;
+
+  --chart-t1: #4f8dfd;
+  --chart-t2: #f97362;
+  --chart-grid: var(--border);
+  --chart-text: var(--text);
+  --chart-tooltip-bg: var(--surface);
+
+  --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
+  font: 16px/145% var(--sans);
+  color: var(--text);
+  background: var(--bg);
+}
+
+:root.dark {
+  --text: #d3d3db;
+  --text-h: #f3f4f6;
+  --bg: #14151a;
+  --surface: #1e1f27;
+  --border: #33343d;
+  --accent: #7fa9ff;
+
+  --level-low-bg: #17301f;
+  --level-low-text: #6fd696;
+  --level-mid-bg: #3a2f10;
+  --level-mid-text: #f0c05a;
+  --level-high-bg: #3a1a17;
+  --level-high-text: #ef7b6a;
+
+  --chart-t1: #7fa9ff;
+  --chart-t2: #ff8f7e;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+}
+
+h1,
+h2 {
+  color: var(--text-h);
+  margin: 0;
+}
+
+button {
+  font: inherit;
+  cursor: pointer;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text-h);
+  border-radius: 6px;
+  padding: 6px 12px;
+}
+
+button.is-active {
+  background: var(--accent);
+  color: #fff;
+  border-color: var(--accent);
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+input,
+select {
+  font: inherit;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text-h);
+  border-radius: 6px;
+  padding: 6px 10px;
+}
